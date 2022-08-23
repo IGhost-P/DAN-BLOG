@@ -8,7 +8,7 @@ export const lightTheme = {
 export const darkTheme = {
   MAIN: "white",
   SUB: "black",
-  BACKGROUND: "#1E1E1E",
+  BACKGROUND: "#24272F",
 };
 
 export type ColorTheme = typeof lightTheme;
