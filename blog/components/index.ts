@@ -11,6 +11,7 @@ export { SearchInput } from "./atom/SearchInput";
 export { Hearder } from "./molecules/Header";
 export { SectionSearch } from "./molecules/SectionSearch";
 export { PostThumNail } from "./molecules/PostThumNail";
+export { CategoriesArticle } from "./molecules/CategoriesArticle";
 // organisms
 export { PostSection } from "./organisms/PostSection";
 

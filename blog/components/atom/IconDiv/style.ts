@@ -10,4 +10,5 @@ export const IconDivStyle = styled.div`
   justify-content: center;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  flex: 0 0 auto;
 `;

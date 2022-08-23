@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { H1, PostThumNail } from "components";
+import { H1, PostThumNail, CategoriesArticle } from "components";
 import * as S from "./style";
 
 interface Props {}
@@ -7,19 +7,19 @@ interface Props {}
 export function PostSection() {
   return (
     <section css={S.Container}>
-      <div>
+      <S.Div>
         <H1>Categiries</H1>
-        <PostThumNail />
-      </div>
-      <div>
+        <CategoriesArticle />
+      </S.Div>
+      <S.Div>
         <H1>Popular Posts</H1>
         <PostThumNail />
-      </div>
-      <div>
+      </S.Div>
+      <S.Div>
         <H1>Latest Post</H1>
         <PostThumNail />
         <PostThumNail />
-      </div>
+      </S.Div>
     </section>
   );
 }

@@ -6,13 +6,15 @@ import * as S from "./style";
 export function SearchInput() {
   return (
     <S.Container>
-      <S.SearchInputStyle placeholder="Search.." />
-      <FontAwesomeIcon
-        css={S.IconContainer}
-        icon={faSearch}
-        width={15}
-        height={15}
-      />
+      <label htmlFor="search_post">
+        <S.SearchInputStyle placeholder="Search.." />
+        <FontAwesomeIcon
+          css={S.IconContainer}
+          icon={faSearch}
+          width={15}
+          height={15}
+        />
+      </label>
     </S.Container>
   );
 }

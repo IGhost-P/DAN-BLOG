@@ -4,15 +4,13 @@ import styled from "@emotion/styled";
 
 export const Container = css`
   width: 100%;
+  padding: 15px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 2.188rem;
-  gap: 1.875rem;
-`;
-
-export const Div = styled.div`
-  width: 715px;
-  height: 100%;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-top: 0.625rem;
+  margin-left: 0.625rem;
+  gap: 1.563rem;
+  overflow-x: scroll;
 `;
