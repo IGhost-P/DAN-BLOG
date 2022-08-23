@@ -8,7 +8,9 @@ export { P } from "./atom/P";
 export { IconDiv } from "./atom/IconDiv";
 export { SearchInput } from "./atom/SearchInput";
 // molecules
+export { Hearder } from "./molecules/Header";
 
 // organisms
 
 // templates
+export { HomeTemplate } from "./templates/HomeTemplate";
