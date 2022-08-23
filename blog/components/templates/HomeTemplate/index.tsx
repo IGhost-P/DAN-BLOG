@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { Hearder, SectionSearch, PostSection } from "components";
+import { Hearder, SectionSearch, PostSection, FooterSection } from "components";
 
 import * as S from "./style";
 export function HomeTemplate() {
@@ -10,7 +10,7 @@ export function HomeTemplate() {
         <SectionSearch />
         <PostSection />
       </main>
-      <footer>마무리글</footer>
+      <FooterSection />
     </div>
   );
 }

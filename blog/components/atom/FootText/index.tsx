@@ -5,7 +5,7 @@ interface Props {
   children: React.ReactNode;
 }
 
-export function FooterText({ children, ...props }: Props) {
+export function FootText({ children, ...props }: Props) {
   const { colorTheme, toggleColorTheme } = useContext(ThemeContext);
   return (
     <S.FooterTextStyle colorTheme={colorTheme}>{children}</S.FooterTextStyle>

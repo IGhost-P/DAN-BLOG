@@ -7,6 +7,7 @@ export { DateText } from "./atom/DateText";
 export { P } from "./atom/P";
 export { IconDiv } from "./atom/IconDiv";
 export { SearchInput } from "./atom/SearchInput";
+export { FootText } from "./atom/FootText";
 // molecules
 export { Hearder } from "./molecules/Header";
 export { SectionSearch } from "./molecules/SectionSearch";
@@ -14,6 +15,7 @@ export { PostThumNail } from "./molecules/PostThumNail";
 export { CategoriesArticle } from "./molecules/CategoriesArticle";
 // organisms
 export { PostSection } from "./organisms/PostSection";
+export { FooterSection } from "./organisms/FooterSection";
 
 // templates
 export { HomeTemplate } from "./templates/HomeTemplate";

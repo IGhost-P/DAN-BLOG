@@ -3,7 +3,7 @@ import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
 export const Container = css`
-  width: 100%;
+  width: 90%;
   padding: 15px;
   display: flex;
   align-items: center;
@@ -13,4 +13,7 @@ export const Container = css`
   margin-left: 0.625rem;
   gap: 1.563rem;
   overflow-x: scroll;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 `;
