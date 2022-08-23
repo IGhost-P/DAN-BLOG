@@ -1,6 +1,4 @@
-/** @jsxImportSource @emotion/react */
-import React, { ReactElement, useContext, useState } from "react";
-import { css, jsx } from "@emotion/react";
+import React, { useContext, useState } from "react";
 import { ThemeContext } from "pages/_app";
 import styled from "@emotion/styled";
 import Image from "next/image";
@@ -23,13 +21,9 @@ export function DarkModeToggle() {
 
   return (
     <>
-      <S.ToggleBtn
-        onClick={clickedToggle}
-        toggle={toggle}
-        colorTheme={colorTheme}
-      >
+      <S.ToggleBtn onClick={clickedToggle} toggle={toggle}>
         <Image
-          src={toggle ? Bright : Dark}
+          src={toggle ? Dark : Bright}
           alt="toggle"
           width={60}
           height={25}
@@ -37,9 +31,9 @@ export function DarkModeToggle() {
           objectFit={"cover"}
           priority={true}
         />
-        <S.Circle toggle={toggle} colorTheme={colorTheme}>
+        <S.Circle toggle={toggle}>
           <Image
-            src={toggle ? Sun : Moon}
+            src={toggle ? Moon : Sun}
             alt="moon"
             width={25}
             height={25}

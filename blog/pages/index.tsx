@@ -1,6 +1,6 @@
 import React, { ReactElement, useContext } from "react";
 import { ThemeContext } from "pages/_app";
-import { DarkModeToggle, Logo } from "components";
+import { DarkModeToggle, IconDiv, H1, H2, P, DateText, Logo } from "components";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
@@ -20,6 +20,11 @@ const Home: NextPage = () => {
       <Logo />
       <main>
         <h1>블로그 입니다</h1>
+        <H1>안녕하세요</H1>
+        <H2>안녕하세요2</H2>
+        <DateText>2020년 1월 1일</DateText>
+        <P>안녕하세요4</P>
+        <IconDiv />
       </main>
     </S.Container>
   );
