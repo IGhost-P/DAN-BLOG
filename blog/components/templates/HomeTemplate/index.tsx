@@ -1,18 +1,16 @@
-import { Hearder } from "components";
-import { Fragment } from "react";
+/** @jsxImportSource @emotion/react */
+import { Hearder, SectionSearch, PostSection } from "components";
+
+import * as S from "./style";
 export function HomeTemplate() {
   return (
-    <Fragment>
+    <div css={S.Container}>
       <Hearder />
-      <main>
-        <div>서치바</div>
-        <section>
-          <div>카테고리</div>
-          <div>인기있는</div>
-          <div>최신글</div>
-        </section>
+      <main css={S.Main}>
+        <SectionSearch />
+        <PostSection />
       </main>
       <footer>마무리글</footer>
-    </Fragment>
+    </div>
   );
 }

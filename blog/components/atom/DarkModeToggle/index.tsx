@@ -23,18 +23,18 @@ export function DarkModeToggle() {
     <>
       <S.ToggleBtn onClick={clickedToggle} toggle={toggle}>
         <Image
-          src={toggle ? Dark : Bright}
-          alt="toggle"
+          src={colorTheme === lightTheme ? Bright : Dark}
+          alt="toggleBackground"
           width={60}
           height={25}
           layout={"fill"}
           objectFit={"cover"}
           priority={true}
         />
-        <S.Circle toggle={toggle}>
+        <S.Circle toggle={toggle} colorTheme={colorTheme}>
           <Image
-            src={toggle ? Moon : Sun}
-            alt="moon"
+            src={colorTheme === lightTheme ? Sun : Moon}
+            alt="toggleIcon"
             width={25}
             height={25}
             layout={"fill"}

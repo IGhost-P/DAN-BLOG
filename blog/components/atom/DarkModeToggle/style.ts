@@ -1,8 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import styled from "@emotion/styled";
-import { ColorTheme } from "styles/theme";
+import { lightTheme, ColorTheme } from "styles/theme";
 interface Props {
   toggle: boolean;
+  colorTheme: ColorTheme;
 }
 
 export const ToggleBtn = styled.button<Props>`
@@ -18,17 +19,16 @@ export const ToggleBtn = styled.button<Props>`
   transition: all 1s ease-in-out;
 `;
 export const Circle = styled.div<Props>`
-  src: url(assets/images/Moon.svg);
-  width: 30px;
-  height: 30px;
+  width: 29px;
+  height: 29px;
   border-radius: 50px;
   position: absolute;
-  right: 0;
+  left: 1px;
   transition: all 0.5s ease-in-out;
-  ${(props) =>
-    props.toggle &&
+  ${({ colorTheme }) =>
+    colorTheme === lightTheme &&
     `
-    transform: translate(-30px, 0);
+    transform: translate(29px, 0);
     transition: all 0.5s ease-in-out;
     `}
 `;

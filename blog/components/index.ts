@@ -9,8 +9,10 @@ export { IconDiv } from "./atom/IconDiv";
 export { SearchInput } from "./atom/SearchInput";
 // molecules
 export { Hearder } from "./molecules/Header";
-
+export { SectionSearch } from "./molecules/SectionSearch";
+export { PostThumNail } from "./molecules/PostThumNail";
 // organisms
+export { PostSection } from "./organisms/PostSection";
 
 // templates
 export { HomeTemplate } from "./templates/HomeTemplate";
