@@ -13,7 +13,12 @@ export const Container = css`
   gap: 1.875rem;
 `;
 
-export const Div = styled.div``;
+export const Div = styled.div`
+  width: calc(100% / 3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
 export const Icon = (colorTheme: ColorTheme) => css`
   margin-left: 0.313rem;
