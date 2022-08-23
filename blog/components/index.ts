@@ -6,6 +6,7 @@ export { H2 } from "./atom/H2";
 export { DateText } from "./atom/DateText";
 export { P } from "./atom/P";
 export { IconDiv } from "./atom/IconDiv";
+export { SearchInput } from "./atom/SearchInput";
 // molecules
 
 // organisms
