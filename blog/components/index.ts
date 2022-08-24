@@ -16,6 +16,7 @@ export { CategoriesArticle } from "./molecules/CategoriesArticle";
 // organisms
 export { PostSection } from "./organisms/PostSection";
 export { FooterSection } from "./organisms/FooterSection";
+export { PostContent } from "./organisms/PostContent";
 
 // templates
 export { HomeTemplate } from "./templates/HomeTemplate";

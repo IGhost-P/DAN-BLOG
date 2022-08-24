@@ -4,6 +4,8 @@ import styled from "@emotion/styled";
 import { ColorTheme } from "styles/theme";
 
 export const Container = css`
+  position: absolute;
+  bottom: 1.25rem;
   width: 75%;
   display: flex;
   align-items: center;

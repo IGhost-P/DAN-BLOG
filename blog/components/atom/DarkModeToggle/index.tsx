@@ -25,8 +25,6 @@ export function DarkModeToggle() {
         <Image
           src={colorTheme === lightTheme ? Bright : Dark}
           alt="toggleBackground"
-          width={60}
-          height={25}
           layout={"fill"}
           objectFit={"cover"}
           priority={true}
@@ -35,8 +33,6 @@ export function DarkModeToggle() {
           <Image
             src={colorTheme === lightTheme ? Sun : Moon}
             alt="toggleIcon"
-            width={25}
-            height={25}
             layout={"fill"}
             priority={true}
           />
