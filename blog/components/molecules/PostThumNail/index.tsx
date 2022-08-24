@@ -21,8 +21,8 @@ export function PostThumNail({ post }: Props) {
           src={imagePath}
           alt={title}
           loading="lazy"
-          width={120}
-          height={80}
+          width={200}
+          height={120}
         />
         <S.Content>
           <H2>{title}</H2>

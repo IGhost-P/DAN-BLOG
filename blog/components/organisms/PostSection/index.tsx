@@ -29,9 +29,11 @@ export function PostSection({ posts }: IPosts) {
       </S.Div>
       <S.Div>
         <H1>Latest Post</H1>
-        {posts.map((post: IPost) => (
-          <PostThumNail key={uuidv4()} post={post} />
-        ))}
+        <section css={S.ThumNailSection}>
+          {posts.map((post: IPost) => (
+            <PostThumNail key={uuidv4()} post={post} />
+          ))}
+        </section>
       </S.Div>
     </section>
   );

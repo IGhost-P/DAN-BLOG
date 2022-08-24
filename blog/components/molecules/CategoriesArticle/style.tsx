@@ -3,8 +3,8 @@ import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
 export const Container = css`
-  width: 90%;
-  padding: 15px;
+  width: 100%;
+  padding: 15px 0 15px 15px;
   display: flex;
   align-items: center;
   justify-content: flex-start;

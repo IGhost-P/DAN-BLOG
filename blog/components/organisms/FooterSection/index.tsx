@@ -13,13 +13,13 @@ export function FooterSection() {
 
   return (
     <footer css={S.Container}>
-      <S.Div>
+      <S.Div css={S.front}>
         <FootText>@ 2022 | Yang Snag Woo</FootText>
       </S.Div>
-      <S.Div>
+      <S.Div css={S.mid}>
         <FootText>CONTACT</FootText>
       </S.Div>
-      <S.Div>
+      <S.Div css={S.back}>
         <FontAwesomeIcon
           icon={faInstagram}
           width={15}

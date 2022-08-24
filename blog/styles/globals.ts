@@ -7,7 +7,7 @@ export const GlobalStyle = (colorTheme: ColorTheme) => css`
   body {
     background: ${colorTheme.BACKGROUND};
   }
-  h1 {
+  h1.md {
     color: ${colorTheme.MAIN};
     box-sizing: border-box;
     font-family: Montserrat, sans-serif;
@@ -18,46 +18,63 @@ export const GlobalStyle = (colorTheme: ColorTheme) => css`
     text-rendering: optimizelegibility;
     word-break: keep-all;
     word-wrap: break-word;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
   }
-  body.dark h1 {
+
+  h2.md {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
     color: ${colorTheme.MAIN};
-  }
-  h2 {
-    color: ${colorTheme.MAIN};
-    box-sizing: border-box;
-    font-family: Montserrat, sans-serif;
-    font-size: 2.2rem;
+    font-family: "Merriweather", "Georgia", serif;
     font-weight: 900;
+    text-rendering: optimizeLegibility;
+    font-size: 1.73286rem;
     line-height: 1.1;
-    padding: 0;
-    text-rendering: optimizelegibility;
-    word-break: keep-all;
-    word-wrap: break-word;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: 1.75rem;
   }
-  h2.detail {
-    margin: 30px 0;
-  }
-  body.dark h2 {
+
+  h3.md {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
     color: ${colorTheme.MAIN};
-  }
-  h3 {
-    color: ${colorTheme.MAIN};
-    box-sizing: border-box;
-    font-family: Montserrat, sans-serif;
-    font-size: 1.9rem;
+    font-family: "Merriweather", "Georgia", serif;
     font-weight: 900;
+    text-rendering: optimizeLegibility;
+    font-size: 1.4427rem;
     line-height: 1.1;
-    padding: 0;
-    text-rendering: optimizelegibility;
-    word-break: keep-all;
-    word-wrap: break-word;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: 1.75rem;
   }
-  body.dark h3 {
-    color: ${colorTheme.MAIN};
+
+  h1.md,
+  h2.md,
+  h3.md,
+  h4.md,
+  h5.md,
+  h6.md {
+    margin-top: 3.5rem;
   }
-  h3.detail {
-    margin: 30px 0;
-  }
+
   ul,
   ol {
     list-style: circle;
@@ -66,17 +83,37 @@ export const GlobalStyle = (colorTheme: ColorTheme) => css`
     margin-left: 1rem;
   }
   article p,
-  p.detail {
+  p {
+    display: block;
     box-sizing: border-box;
     font-family: Merriweather, Georgia, serif;
     line-height: 28px;
-    margin: 1.75rem 0;
+    font-size: 1rem;
+    margin-bottom: 1.75rem;
     padding: 0;
     word-break: keep-all;
     word-wrap: break-word;
-    font-size: 1.5rem;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
     color: ${colorTheme.MAIN};
   }
+
+  hr {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    margin-bottom: calc(1.75rem - 1px);
+    background: ${colorTheme.MAIN};
+    border: none;
+    height: 1px;
+  }
+
   blockquote {
     border-left: 0.32813rem solid ${colorTheme.MAIN};
     box-sizing: border-box;
@@ -91,13 +128,12 @@ export const GlobalStyle = (colorTheme: ColorTheme) => css`
     word-break: keep-all;
     word-wrap: break-word;
   }
-  body.dark blockquote {
-    border-left: 0.32813rem solid ${colorTheme.MAIN};
+
+  div.md-wrapper {
+    margin-bottom: 1.75rem;
   }
-  div.detail-wrapper {
-    margin-bottom: 20px;
-  }
-  ul.detail {
+
+  ul.md {
     display: block;
     list-style-type: disc;
     margin-block-start: 1em;
@@ -106,10 +142,12 @@ export const GlobalStyle = (colorTheme: ColorTheme) => css`
     margin-inline-end: 0px;
     padding-inline-start: 40px;
   }
-  ul.detail li {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
+  ul.md li {
+    color: ${colorTheme.MAIN};
+    font-size: 1rem;
+    margin-bottom: calc(1.75rem / 2);
   }
+
   strong {
     box-sizing: border-box;
     font-family: Merriweather, Georgia, serif;
@@ -118,25 +156,11 @@ export const GlobalStyle = (colorTheme: ColorTheme) => css`
     word-break: keep-all;
     word-wrap: break-word;
   }
-  .img-detail {
+  .img-md {
     width: 100%;
-    margin: 30px 0;
+    margin-bottom: 1.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  body.dark .p-blog > a {
-    color: ${colorTheme.MAIN};
-  }
-  body.dark .p-blog {
-    color: rgba(255, 255, 255, 0.88);
-  }
-  body.dark footer {
-    color: rgba(255, 255, 255, 0.88);
-  }
-  @media (max-width: 620px) {
-    body.dark .toggle-button-switch {
-      left: 20px;
-    }
   }
 `;

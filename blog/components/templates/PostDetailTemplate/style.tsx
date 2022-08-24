@@ -14,9 +14,11 @@ export const Container = css`
 export const Main = css`
   width: 100%;
   height: 100%;
+  max-width: 1100px;
+  min-height: calc(100vh - 430px);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   gap: 1.875rem;
 `;

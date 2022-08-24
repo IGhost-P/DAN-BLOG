@@ -62,11 +62,12 @@ export function PostContent({ post }: { post: IPost }) {
         </code>
       );
     },
-    // p: ({ node, ...props }: any) => <p className="detail" {...props} />,
-    small: ({ node, ...props }: any) => <small className="detail" {...props} />,
-    ul: ({ node, ...props }: any) => <ul className="detail" {...props} />,
-    h2: ({ node, ...props }: any) => <h2 className="detail" {...props} />,
-    h3: ({ node, ...props }: any) => <h3 className="detail" {...props} />,
+
+    small: ({ node, ...props }: any) => <small className="md" {...props} />,
+    ul: ({ node, ...props }: any) => <ul className="md" {...props} />,
+    h1: ({ node, ...props }: any) => <h1 className="md" {...props} />,
+    h2: ({ node, ...props }: any) => <h2 className="md" {...props} />,
+    h3: ({ node, ...props }: any) => <h3 className="md" {...props} />,
   };
 
   return (

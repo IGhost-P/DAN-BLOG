@@ -4,9 +4,9 @@ import styled from "@emotion/styled";
 import { ColorTheme } from "styles/theme";
 
 export const Container = css`
-  position: absolute;
-  bottom: 1.25rem;
-  width: 75%;
+  width: 100%;
+  max-width: 1100px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,7 +19,16 @@ export const Div = styled.div`
   width: calc(100% / 3);
   display: flex;
   align-items: center;
+`;
+
+export const front = css`
+  justify-content: flex-start;
+`;
+export const mid = css`
   justify-content: center;
+`;
+export const back = css`
+  justify-content: flex-end;
 `;
 
 export const Icon = (colorTheme: ColorTheme) => css`

@@ -7,5 +7,6 @@ export const FooterTextStyle = styled.h1<ThemeProps>`
   font-weight: 900;
   line-height: 9.68px;
   font-family: "Inter", sans-serif;
+  margin: 0;
   color: ${({ colorTheme }) => colorTheme.MAIN};
 `;
