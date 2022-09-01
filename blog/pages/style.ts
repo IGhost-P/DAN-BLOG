@@ -1,8 +1,0 @@
-/** @jsxImportSource @emotion/react */
-import styled from "@emotion/styled";
-import { ThemeProps } from "types";
-
-export const Container = styled.div<ThemeProps>`
-  width: 100vw;
-  height: 100%;
-`;
