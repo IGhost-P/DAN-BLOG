@@ -32,12 +32,13 @@ export function PostContent({ post }: { post: IPost }) {
         const image = node.children[0];
 
         return (
-          <div>
+          <div css={S.ImgaeDiv}>
             <Image
               src={`/images/posts/${post.slug}/${image.properties.src}`}
               alt={image.alt}
               width={600}
               height={300}
+              objectFit="contain"
             />
           </div>
         );

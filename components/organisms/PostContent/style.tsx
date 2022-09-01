@@ -9,4 +9,12 @@ export const Container = css`
   height: 100%;
 `;
 
-export const Div = styled.div``;
+export const ImgaeDiv = css`
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.75rem;
+`;
