@@ -5,7 +5,7 @@ import * as S from "./style";
 
 interface Props {
   text: string;
-  onClick: () => void;
+  onClick: any;
   isBlack?: boolean;
 }
 
