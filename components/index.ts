@@ -8,6 +8,8 @@ export { P } from "./atom/P";
 export { IconDiv } from "./atom/IconDiv";
 export { SearchInput } from "./atom/SearchInput";
 export { FootText } from "./atom/FootText";
+export { Portal } from "./atom/Portal";
+export { SquareBtn } from "./atom/SquareBtn";
 // molecules
 export { Hearder } from "./molecules/Header";
 export { SectionSearch } from "./molecules/SectionSearch";
@@ -17,6 +19,7 @@ export { CategoriesArticle } from "./molecules/CategoriesArticle";
 export { PostSection } from "./organisms/PostSection";
 export { FooterSection } from "./organisms/FooterSection";
 export { PostContent } from "./organisms/PostContent";
+export { ContactModal } from "./organisms/ContactModal";
 
 // templates
 export { HomeTemplate } from "./templates/HomeTemplate";

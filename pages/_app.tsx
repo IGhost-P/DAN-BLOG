@@ -5,7 +5,6 @@ import type { AppProps } from "next/app";
 import { ThemeProvider } from "@emotion/react";
 import { lightTheme, darkTheme, ColorTheme } from "styles/theme";
 import { GlobalStyle } from "styles/globals";
-import { reset } from "styles/reset";
 import { useDarkMode } from "hooks/useDarkMode";
 
 interface ContextProps {
