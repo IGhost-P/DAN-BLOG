@@ -6,7 +6,11 @@ export const GlobalStyle = (colorTheme: ColorTheme) => css`
   ${reset};
   body {
     background: ${colorTheme.BACKGROUND};
+    height: 100vh;
+    display: table;
+    position: relative;
   }
+
   h1.md {
     color: ${colorTheme.MAIN};
     box-sizing: border-box;
@@ -133,7 +137,7 @@ export const GlobalStyle = (colorTheme: ColorTheme) => css`
     margin-bottom: 1.75rem;
   }
 
-  ul.md {
+  ul {
     display: block;
     list-style-type: disc;
     margin-block-start: 1em;
@@ -142,7 +146,22 @@ export const GlobalStyle = (colorTheme: ColorTheme) => css`
     margin-inline-end: 0px;
     padding-inline-start: 40px;
   }
-  ul.md li {
+  ul li {
+    color: ${colorTheme.MAIN};
+    font-size: 1rem;
+    margin-bottom: calc(1.75rem / 2);
+  }
+
+  ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+  ol li {
     color: ${colorTheme.MAIN};
     font-size: 1rem;
     margin-bottom: calc(1.75rem / 2);

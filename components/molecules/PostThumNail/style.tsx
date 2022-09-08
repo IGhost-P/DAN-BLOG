@@ -9,7 +9,7 @@ export const Container = css`
   align-items: flex-start;
   justify-content: felx-start;
   flex-direction: row;
-  gap: 1.188rem;
+  gap: 2rem;
   &:hover {
     cursor: pointer;
   }
@@ -22,4 +22,9 @@ export const Content = styled.div`
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 `;

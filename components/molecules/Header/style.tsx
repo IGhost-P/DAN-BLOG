@@ -11,7 +11,11 @@ export const Container = css`
 `;
 
 export const ToggleStyle = styled.div`
-  position: absolute;
+  position: relative;
   top: 9px;
-  margin-left: 35rem;
+  left: 20%;
+
+  @media (max-width: 768px) {
+    left: 0;
+  }
 `;
