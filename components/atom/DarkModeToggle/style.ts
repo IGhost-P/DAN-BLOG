@@ -5,8 +5,11 @@ interface Props {
   toggle: boolean;
   colorTheme: ColorTheme;
 }
+interface ToggleProps {
+  toggle: boolean;
+}
 
-export const ToggleBtn = styled.button<Props>`
+export const ToggleBtn = styled.button<ToggleProps>`
   width: 60px;
   height: 25px;
   border-radius: 30px;

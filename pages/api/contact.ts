@@ -19,12 +19,14 @@ export default async function handler(
       return;
     }
 
+    console.log("name: ", name);
     let db_client;
     try {
       const newMessage = { email, name, message };
       db_client = await MongoClient.connect(
-        "mongodb+srv://yangsangwoo:<password>@cluster0.wfxaj3e.mongodb.net/?retryWrites=true&w=majority"
+        "mongodb+srv://yangsangwoo:WrAw33HMVdKujS90@cluster0.wfxaj3e.mongodb.net/blog?retryWrites=true&w=majority"
       );
+
       const db = db_client.db("blog");
       const result = await db.collection("contact").insertOne(newMessage);
 

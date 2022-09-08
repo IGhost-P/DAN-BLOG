@@ -6,9 +6,11 @@ import * as S from "./style";
 import { Icon } from "./style";
 import { useDarkMode } from "hooks/useDarkMode";
 
-interface Props {}
+interface Props {
+  onClick: () => void;
+}
 
-export function FooterSection() {
+export function FooterSection({ onClick }: Props) {
   const { colorTheme, toggleColorTheme } = useDarkMode();
 
   return (
@@ -17,7 +19,7 @@ export function FooterSection() {
         <FootText>@ 2022 | Yang Snag Woo</FootText>
       </S.Div>
       <S.Div css={S.mid}>
-        <FootText>CONTACT</FootText>
+        <FootText onClick={onClick}>CONTACT</FootText>
       </S.Div>
       <S.Div css={S.back}>
         <FontAwesomeIcon

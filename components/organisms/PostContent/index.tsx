@@ -25,7 +25,7 @@ export function PostContent({ post }: { post: IPost }) {
   const imagePath = `/images/posts/${post.slug}/${post.image}`;
 
   const customRenderers = {
-    p(paragraph) {
+    p(paragraph: any) {
       const { node } = paragraph;
 
       if (node.children[0].tagName === "img") {
@@ -51,12 +51,13 @@ export function PostContent({ post }: { post: IPost }) {
       const match = /language-(\w+)/.exec(className || "");
       return !inline && match ? (
         <SyntaxHighlighter
-          children={String(children).replace(/\n$/, "")}
           style={dracula}
           language={match[1]}
           PreTag="div"
           {...props}
-        />
+        >
+          {String(children).replace(/\n$/, "")}
+        </SyntaxHighlighter>
       ) : (
         <code className={className} {...props}>
           {children}
