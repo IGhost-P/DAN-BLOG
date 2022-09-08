@@ -3,7 +3,7 @@ import { ThemeContext } from "pages/_app";
 import * as S from "./style";
 interface Props {
   children: React.ReactNode;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 export function FootText({ children, onClick }: Props) {

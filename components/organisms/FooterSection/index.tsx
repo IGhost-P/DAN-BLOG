@@ -10,7 +10,7 @@ interface Props {
   onClick: () => void;
 }
 
-export function FooterSection({ onClick }) {
+export function FooterSection({ onClick }: Props) {
   const { colorTheme, toggleColorTheme } = useDarkMode();
 
   return (

@@ -31,7 +31,7 @@ export function ContactModal({ children, onClick }: any) {
   const onSubmit = useCallback(
     async (e: any) => {
       e.preventDefault();
-      if (name === "" || email === "" || message === 0) {
+      if (name === "" || email === "" || message === "") {
         alert("모든 항목을 입력해주세요.");
         return;
       }
