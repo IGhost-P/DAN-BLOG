@@ -19,14 +19,15 @@ export function PostSection({ posts }: IPosts) {
 
   return (
     <section css={S.Container}>
-      <S.Div>
+      {/* 추후에 추가 */}
+      {/* <S.Div>
         <H1>Categiries</H1>
         <CategoriesArticle />
       </S.Div>
       <S.Div>
         <H1>Popular Posts</H1>
-        {/* <PostThumNail /> */}
-      </S.Div>
+        <PostThumNail /> 
+      </S.Div> */}
       <S.Div>
         <H1>Latest Post</H1>
         <section css={S.ThumNailSection}>

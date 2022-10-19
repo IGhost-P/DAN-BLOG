@@ -17,7 +17,7 @@ export function HomeTemplate({ posts }: IPosts) {
     <div css={S.Container}>
       <Hearder />
       <main css={S.Main}>
-        <SectionSearch />
+        {/* <SectionSearch /> */}
         <PostSection posts={posts} />
       </main>
       <FooterSection onClick={() => setModalOn(!modalOn)} />

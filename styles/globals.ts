@@ -9,12 +9,13 @@ export const GlobalStyle = (colorTheme: ColorTheme) => css`
     height: 100vh;
     display: table;
     position: relative;
+    font-family: "Noto Sans KR", sans-serif;
   }
 
   h1.md {
     color: ${colorTheme.MAIN};
     box-sizing: border-box;
-    font-family: Montserrat, sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
     font-size: 3rem;
     font-weight: 900;
     line-height: 1.1;
@@ -37,7 +38,7 @@ export const GlobalStyle = (colorTheme: ColorTheme) => css`
     padding-right: 0;
     padding-top: 0;
     color: ${colorTheme.MAIN};
-    font-family: "Merriweather", "Georgia", serif;
+    font-family: "Noto Sans KR", sans-serif;
     font-weight: 900;
     text-rendering: optimizeLegibility;
     font-size: 1.73286rem;
@@ -58,7 +59,7 @@ export const GlobalStyle = (colorTheme: ColorTheme) => css`
     padding-right: 0;
     padding-top: 0;
     color: ${colorTheme.MAIN};
-    font-family: "Merriweather", "Georgia", serif;
+    font-family: "Noto Sans KR", sans-serif;
     font-weight: 900;
     text-rendering: optimizeLegibility;
     font-size: 1.4427rem;
@@ -84,13 +85,14 @@ export const GlobalStyle = (colorTheme: ColorTheme) => css`
     list-style: circle;
   }
   li {
+    font-family: "Noto Sans KR", sans-serif;
     margin-left: 1rem;
   }
   article p,
   p {
     display: block;
     box-sizing: border-box;
-    font-family: Merriweather, Georgia, serif;
+    font-family: "Noto Sans KR", sans-serif;
     line-height: 28px;
     font-size: 1rem;
     margin-bottom: 1.75rem;
@@ -122,7 +124,7 @@ export const GlobalStyle = (colorTheme: ColorTheme) => css`
     border-left: 0.32813rem solid ${colorTheme.MAIN};
     box-sizing: border-box;
 
-    font-family: Merriweather, Georgia, serif;
+    font-family: "Noto Sans KR", sans-serif;
     font-size: 1.20112rem;
     font-style: italic;
     line-height: 1.75rem;
@@ -169,7 +171,7 @@ export const GlobalStyle = (colorTheme: ColorTheme) => css`
 
   strong {
     box-sizing: border-box;
-    font-family: Merriweather, Georgia, serif;
+    font-family: "Noto Sans KR", sans-serif;
     font-weight: 700;
     line-height: 28px;
     word-break: keep-all;
