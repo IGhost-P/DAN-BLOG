@@ -1,5 +1,5 @@
 # [CMD+SPACE](https://dan-cmd-space.com/)
-![image](https://user-images.githubusercontent.com/79236624/196857414-2648af3a-203f-4455-97ea-77e7c2196ef1.png)(https://dan-cmd-space.com/)
+![image](https://user-images.githubusercontent.com/79236624/196857631-551beb6a-300b-4d7d-808d-f171bd7530ad.png)(https://dan-cmd-space.com/)
 My personal blog. Syntax theme based on [Sarah Drasner's Night Owl](https://github.com/sdras/night-owl-vscode-theme/) with small tweaks.
 
 To run locally, `yarn`, then `yarn dev`, then open https://localhost:3000.
