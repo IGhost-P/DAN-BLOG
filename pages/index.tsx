@@ -2,7 +2,7 @@ import Head from "next/head";
 import { HomeTemplate } from "components";
 import { getAllPosts } from "lib/post-util";
 import { IPosts } from "types";
-import * as S from "./style";
+import * as S from "styles/app_style";
 
 const Home = ({ posts }: IPosts) => {
   return (
