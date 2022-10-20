@@ -5,9 +5,11 @@ import * as S from "./style";
 export function Hearder() {
   return (
     <header css={S.Container}>
-      <S.ToggleStyle>
-        <DarkModeToggle />
-      </S.ToggleStyle>
+      <>
+        <S.ToggleStyle>
+          <DarkModeToggle />
+        </S.ToggleStyle>
+      </>
       <Logo />
     </header>
   );

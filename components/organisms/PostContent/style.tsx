@@ -7,6 +7,10 @@ export const Container = css`
   height: 100%;
   box-sizing: border-box;
   height: 100%;
+
+  @media (max-width: 768px) {
+    padding: 0 8px;
+  }
 `;
 
 export const ImgaeDiv = css`

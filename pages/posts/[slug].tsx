@@ -2,7 +2,7 @@ import { PostDetailTemplate } from "components/templates/PostDetailTemplate";
 import { getPostData, getPostsFiles } from "lib/post-util";
 import Head from "next/head";
 import { IPost } from "types";
-import * as S from "./style";
+import * as S from "styles/post_style";
 
 export default function PostDetailPage({ post }: { post: IPost }) {
   //   const { markdownRemark: post } = data;

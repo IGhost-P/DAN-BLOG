@@ -24,6 +24,7 @@ export const ThumNailSection = css`
   justify-content: flex-start;
   flex-direction: column;
   gap: 1.188rem;
+  box-sizing: border-box;
   padding-left: 0.625rem;
   padding-top: 0.625rem;
 `;

@@ -4,6 +4,8 @@ import styled from "@emotion/styled";
 import { ColorTheme } from "styles/theme";
 
 export const Container = css`
+  position: absolute;
+  bottom: 0%;
   width: 100%;
   max-width: 1100px;
   height: 30px;

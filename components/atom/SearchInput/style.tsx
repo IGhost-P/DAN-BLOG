@@ -6,6 +6,11 @@ export const Container = styled.div`
   position: relative;
   width: 610px;
   height: 50px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    box-sizing: border-box;
+  }
 `;
 
 export const SearchInputStyle = styled.input`
