@@ -22,18 +22,22 @@ export function FooterSection({ onClick }: Props) {
         <FootText onClick={onClick}>CONTACT</FootText>
       </S.Div>
       <S.Div css={S.back}>
-        <FontAwesomeIcon
-          icon={faInstagram}
-          width={15}
-          height={15}
-          css={Icon(colorTheme)}
-        />
-        <FontAwesomeIcon
-          icon={faGithub}
-          width={15}
-          height={15}
-          css={Icon(colorTheme)}
-        />
+        <a href="https://www.instagram.com/tkd_wuuu/">
+          <FontAwesomeIcon
+            icon={faInstagram}
+            width={15}
+            height={15}
+            css={Icon(colorTheme)}
+          />
+        </a>
+        <a href="https://github.com/IGhost-P">
+          <FontAwesomeIcon
+            icon={faGithub}
+            width={15}
+            height={15}
+            css={Icon(colorTheme)}
+          />
+        </a>
       </S.Div>
     </footer>
   );
