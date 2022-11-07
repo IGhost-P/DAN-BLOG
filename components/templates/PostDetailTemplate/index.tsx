@@ -1,6 +1,12 @@
 /** @jsxImportSource @emotion/react */
 import { useState } from "react";
-import { Hearder, FooterSection, PostContent, ContactModal } from "components";
+import {
+  Hearder,
+  FooterSection,
+  PostContent,
+  ContactModal,
+  Comment,
+} from "components";
 import { IPost } from "types";
 import * as S from "./style";
 export function PostDetailTemplate({ post }: { post: IPost }) {
@@ -11,6 +17,7 @@ export function PostDetailTemplate({ post }: { post: IPost }) {
       <main css={S.Main}>
         <PostContent post={post} />
       </main>
+      <Comment repo="IGhost-P/DAN-BLOG" />
       <FooterSection onClick={() => setModalOn(!modalOn)} />
       {modalOn && <ContactModal onClick={() => setModalOn(false)} />}
     </div>
