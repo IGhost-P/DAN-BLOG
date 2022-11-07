@@ -1,6 +1,7 @@
 # [CMD+SPACE](https://dan-cmd-space.com/)
+[![image](https://user-images.githubusercontent.com/79236624/196858138-431a3fdb-cfeb-4360-b03d-e86b42d3ae76.png)](https://dan-cmd-space.com/)
 
-My personal blog. Forked from [Gatsby blog starter](https://github.com/gatsbyjs/gatsby-starter-blog). Syntax theme based on [Sarah Drasner's Night Owl](https://github.com/sdras/night-owl-vscode-theme/) with small tweaks.
+My personal blog. Syntax theme based on [Sarah Drasner's Night Owl](https://github.com/sdras/night-owl-vscode-theme/) with small tweaks.
 
 To run locally, `yarn`, then `yarn dev`, then open https://localhost:3000.
 
