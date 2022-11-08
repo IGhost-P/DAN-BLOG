@@ -160,11 +160,11 @@ export const CourseContainerMeMo = React.memo(CourseContainer);
 3. 마지막 ObserverAPI에 의해 교차 상태가 된다면 콜백함수를 실행시키고 , isLoding이 true가 되면서 div가 unmount가 되며 클린업 함수로 인해 div의 observe는 사라진다
 4. 이후 isLoading이 끝나고 다시 div가 랜더링 되며, bottom 값이 업데이트 되고, bottom을 의존성 배열에 담고 있는 useEffect때문에 새롭게 생긴 마지막 div에 observe객체가 observer를 하게된다, 이렇게 2→4번을 반복하는게 무한 스크롤이다.
 
-![Untitled](untitled1.png)
+![Untitled](/public/images/posts/Infinite-scrolling-in-React/Untitled1.png)
 
 이제 observe 될때마다 콜백함수가 실행이 되어서, page가 업데이트 되고, page가 업데이트 될때마다 list를 새로 받아와 사용하면 되는것이다
 
-![Untitled](untitled2.png)
+![Untitled](/public/images/posts/Infinite-scrolling-in-React/Untitled2.png)
 
 추가적으로 해주면 좋은것은 React.memo이다, list는 새로운 배열이기 때문에 매번 새로 랜더링 해야하는데 list중 item에 해당 하는 컴포넌트는 각각 자신의 props가 변경이 되지 않으면 재랜더링을 하지 않도록 방지하는 것이 React.memo이다.
 
@@ -224,4 +224,4 @@ export const CourseDescriptionMeMo = React.memo(CourseDescription);
 
 이렇게 하면 새롭게 들어온 item들만 랜더링 된다.(추가적으로 uuidv4를 사용하면 key값이 매번 랜덤값이 되기 때문에 의미가 없어지니 조심하자)
 
-![Untitled](untitled.gif)
+![Untitled](/public/images/posts/Infinite-scrolling-in-React/Untitled.gif)
