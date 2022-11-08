@@ -25,10 +25,11 @@ To run locally, `yarn`, then `yarn dev`, then open https://localhost:3000.
     - [x] dark mode
     - [x] syntax highlighting
     - [x] conect to MongoDB
+    - [x] add git comment
+    - [x] redirect insta, github
 - 0.2.0
   - processing..(plz wait a moment)
     - [ ] add search
     - [x] add tags
     - [ ] add categories
     - [x] add modal
-    - [x] add git comment
