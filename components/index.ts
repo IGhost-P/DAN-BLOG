@@ -15,6 +15,7 @@ export { Hearder } from "./molecules/Header";
 export { SectionSearch } from "./molecules/SectionSearch";
 export { PostThumNail } from "./molecules/PostThumNail";
 export { CategoriesArticle } from "./molecules/CategoriesArticle";
+export { Comment } from "./molecules/Comment";
 // organisms
 export { PostSection } from "./organisms/PostSection";
 export { FooterSection } from "./organisms/FooterSection";
