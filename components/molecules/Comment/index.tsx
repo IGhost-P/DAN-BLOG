@@ -1,7 +1,9 @@
 import React, { useEffect, useRef } from "react";
+import { MutableRefObject } from "react";
 
-export function Comment({ repo }) {
-  const containerRef = useRef();
+export function Comment({ repo }: { repo: string }) {
+  const containerRef = useRef() as MutableRefObject<HTMLDivElement>;
+
   useEffect(() => {
     const utterances = document.createElement("script");
     const attributes = {
