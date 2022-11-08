@@ -25,7 +25,6 @@ export function Comment({ repo }: { repo: string }) {
       id="comment"
       style={{
         width: "100%",
-        maxWidth: "700px",
         margin: "0 auto",
         marginTop: "50px",
         marginBottom: "50px",
