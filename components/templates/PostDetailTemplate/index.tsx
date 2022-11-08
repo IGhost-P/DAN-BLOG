@@ -17,7 +17,7 @@ export function PostDetailTemplate({ post }: { post: IPost }) {
       <main css={S.Main}>
         <PostContent post={post} />
       </main>
-      <Comment repo="IGhost-P/DAN-BLOG" />
+      {/* <Comment repo="IGhost-P/DAN-BLOG" /> */}
       <FooterSection onClick={() => setModalOn(!modalOn)} />
       {modalOn && <ContactModal onClick={() => setModalOn(false)} />}
     </div>
